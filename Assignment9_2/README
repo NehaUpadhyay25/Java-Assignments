@@ -1,0 +1,10 @@
+Problem Statement -->
+
+Convert Mandelbrot.java into a multithreaded version.
+
+The maximum number active pixelThreads is limited by the number of processors/cores. 
+The minimum number active pixelThreads should be identical to the maximum number active 
+pixelThreads if possible.
+
+Lets assume the area is 100x100 pixels, and the computer you are running your code has 
+4 cores, than each core will work on a 1/4 of the:q pixel area.
