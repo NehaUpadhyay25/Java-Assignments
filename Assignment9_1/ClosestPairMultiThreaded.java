@@ -1,5 +1,3 @@
-package Assignment9_1;
-
 import java.util.Comparator;
 
 /**

@@ -1,4 +1,4 @@
-package Assignment14;/*
+/*
  * Node.java
  * 
  * @version: 1.0

@@ -1,4 +1,6 @@
-package Assignment1;/*
+package assignment1;
+
+/*
  * FileName : Linear.java
  * 
  * Version : 1.0
@@ -39,7 +41,7 @@ class Linear {
 
                 System.out.println( "f(0) : 0" );
                 System.out.println( "f(1) : 1" );
-             
+              
                 // works for the values stated in program that is 2 to 100
                 for ( int range= 2 ; range <= 100 ; range++ ) {
                 	

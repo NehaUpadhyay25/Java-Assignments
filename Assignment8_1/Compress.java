@@ -1,8 +1,10 @@
-package Assignment8_1;
-
-import java.io.*;
+import java.io.DataOutputStream;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
+import java.io.IOException;
 
 /**
 * This class used does the Compression and Decompression of file.

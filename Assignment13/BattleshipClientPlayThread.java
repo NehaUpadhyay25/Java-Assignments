@@ -1,7 +1,6 @@
-package Assignment13;
-
-import javax.swing.*;
 import java.rmi.RemoteException;
+
+import javax.swing.JLabel;
 
 public class BattleshipClientPlayThread extends Thread {
 
@@ -11,7 +10,7 @@ public class BattleshipClientPlayThread extends Thread {
     BattleshipSwing client = null;
     
     BattleshipClientPlayThread(BattleshipPlayer player,
-                               BattleshipRemote service, JLabel resultsLabel, BattleshipSwing client) {
+            BattleshipRemote service, JLabel resultsLabel, BattleshipSwing client) {
         this.player = player;
         this.service = service;
         this.resultsLabel = resultsLabel;

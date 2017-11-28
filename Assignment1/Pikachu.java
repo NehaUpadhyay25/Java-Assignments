@@ -1,4 +1,6 @@
-package Assignment1;/*
+package assignment1;
+
+/*
  * FileName : Pikachu.java
  * 
  * Version : 1.0
@@ -62,12 +64,6 @@ public class Pikachu {
 	    int totalSubsets = power ( 2, noOfCoins );
 	    
 	    int sumSoFar = 0;
-	    
-	    // Coins are given in sorted order so when price is less than value
-	    // of first coin, simply return no.
-	    if ( price < coins[0] ) {
-	    	return "no";
-	    }
 	    
 	    // Find all the subsets of given set of coins and determine if their 
 	    // sum equals the given price or not. 

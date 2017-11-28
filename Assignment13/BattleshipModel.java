@@ -1,5 +1,3 @@
-package Assignment13;
-
 import java.rmi.RemoteException;
 
 public class BattleshipModel {

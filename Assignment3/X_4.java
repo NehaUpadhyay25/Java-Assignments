@@ -1,4 +1,5 @@
-package Assignment3;/*
+package assignment3;
+/*
  * X_4.java
  * 
  * @version: 1.0
@@ -10,7 +11,7 @@ package Assignment3;/*
  *     Initial revision
  */
 
-import java.util.Scanner;
+import java.util.Scanner;			// X_4.java uses Scanner class which is present in
 									// a different package(java.util) so need to import it.
 									// By importing Scanner here, X_4 can refer to it by 
 									// directly using its name.

@@ -1,5 +1,3 @@
-package Assignment9_1;
-
 /**
 * This class represents an independent thread to carry out task of finding 2 points with minimum distance.
 * 

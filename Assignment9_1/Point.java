@@ -1,5 +1,3 @@
-package Assignment9_1;
-
 /**
 * This class represents a 3D point.
 * 

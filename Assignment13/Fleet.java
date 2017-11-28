@@ -1,4 +1,4 @@
-package Assignment13;/*
+/*
  * Fleet.java
  * 
  * @version: 1.0

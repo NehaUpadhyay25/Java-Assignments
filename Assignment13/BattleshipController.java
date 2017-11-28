@@ -1,4 +1,4 @@
-package Assignment13;/*
+/*
  * BattleshipController.java
  * 
  * @version: 1.0
@@ -29,7 +29,7 @@ public class BattleshipController {
     String winnerName = "";
 
     public BattleshipController(BattleshipModel model,
-                                PrintWriter[] clientOutputStreams, InputStream[] streams) {
+            PrintWriter[] clientOutputStreams, InputStream[] streams) {
         this.model = model;
         model.initialize();
 

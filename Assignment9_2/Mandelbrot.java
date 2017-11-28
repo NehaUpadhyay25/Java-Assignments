@@ -1,8 +1,7 @@
-package Assignment9_2;
-
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+import javax.swing.JFrame;
 
 /**
 * This is a multi-threaded version of Mandelbrot program given.

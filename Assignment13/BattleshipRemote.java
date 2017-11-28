@@ -1,4 +1,4 @@
-package Assignment13;/*
+/*
  * BattleshipRemote.java
  * 
  * @version: 1.0
@@ -9,9 +9,7 @@ package Assignment13;/*
  * Revisions:
  *     Initial revision
  */
-
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import java.rmi.*;
 
 /**
  * This interface is remote interface in the Battleship game.

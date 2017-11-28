@@ -1,4 +1,4 @@
-package Assignment13;
+
 /*
  * BattleshipPlayer.java
  * 
@@ -11,9 +11,10 @@ package Assignment13;
  *     Initial revision
  */
 
-import javax.swing.*;
 import java.io.InputStream;
 import java.rmi.RemoteException;
+
+import javax.swing.JLabel;
 
 /**
  * This class represents the Player in the Battleship game.
@@ -43,7 +44,7 @@ public class BattleshipPlayer {
         this.name = name;
         this.service = service;
         this.grid = new Ocean(BattleshipGame.minRow, BattleshipGame.minColumn,
-                              BattleshipGame.maxRow, BattleshipGame.maxColumn);
+                BattleshipGame.maxRow, BattleshipGame.maxColumn);
         this.grid.initializeGrid();
         this.trackingGrid = new int[(this.grid.getMaxRow() - this.grid
                 .getMinRow()) + 1][(this.grid.getMaxCol() - this.grid

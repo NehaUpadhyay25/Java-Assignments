@@ -1,4 +1,4 @@
-package Assignment13;/*
+/*
  * BattleshipRemoteImpl.java
  * 
  * @version: 1.0
@@ -9,9 +9,8 @@ package Assignment13;/*
  * Revisions:
  *     Initial revision
  */
-
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
+import java.rmi.server.*;
+import java.rmi.*;
 
 /**
  * This class is remote implementation in the Battleship game.

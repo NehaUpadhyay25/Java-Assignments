@@ -1,4 +1,6 @@
-package Assignment3;/*
+package assignment3;
+
+/*
  * X_1.java
  * 
  * @version: 1.0

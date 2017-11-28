@@ -1,5 +1,3 @@
-package Assignment7_3;
-
 import java.util.Comparator;
 import java.util.Scanner;
 

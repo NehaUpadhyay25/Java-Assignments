@@ -1,4 +1,5 @@
-package Assignment3;/*
+package assignment3;
+/*
  * Maze.java
  * 
  * @version: 1.0

@@ -1,4 +1,4 @@
-package Assignment6_2;/*
+/*
  * StorageMain.java
  * 
  * @version: 1.0

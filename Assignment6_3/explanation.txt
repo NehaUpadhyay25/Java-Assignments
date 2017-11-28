@@ -1,0 +1,65 @@
+1.) public <T> int method(T[] anArray, T elem)
+	Here <T> is the type parameter which takes only reference types.
+	T is unbounded, so java compiler replaces it with the type argument like
+	public static int count(object[] anArray, object elem)
+
+2.) public void method(List<? extends Foo> list)
+	<? extends foo> is an upper bounded wildcard with upper bound of 'foo' type.
+	'method' method can access the list elements as type 'foo'. Arguments: List<Foo>, List<subtype of Foo>.
+	Cannot add to list. A upper bounded wildcard is expressed using the wildcard character ("?"), 
+	following by the 'extends' keyword, followed by its upper bound <"? extends foo>.
+
+3.) static void method(List<?> list)
+	<?> is an unbounded wildcard and expresses list of object instances.
+	Cannot add to list. Any concrete type A, List<A> is a subtype of List<?>, you can use method to 
+	print a list of any type. Arguments: List<Foo>, List<Object>, List<Integer> etc.
+
+4.) public void method(List<? super Integer> list)
+	A lower bounded wildcard is expressed using the wildcard character ("?"), 
+	following by the 'super' keyword, followed by its lower bound <? super Integer>
+	List<? super Integer> represents a list of any type that is a super type of Integer.
+	Arguments: List<Integer>, List<Number>, List<Object>.
+
+5.) public void method(List<?> i)
+	This is an unbounded wildcard. For example, a list may be defined as List<?> but, when 
+	evaluating an expression, the compiler infers a particular type from the code. This 
+	scenario is known as wildcard capture.
+	Arguments: List<Foo>, List<Object>, List<Integer> etc.
+	In this example, the compiler processes the i input parameter as being of type Object. 
+	When the 'method' method invokes List.set(int, E), the compiler is not able to confirm 
+	the type of object that is being inserted into the list, and an error is produced. When 
+	this type of error occurs it typically means that the compiler believes that you are 
+	assigning the wrong type to a variable. Generics were added to the Java language for 
+	this reason — to enforce type safety at compile time.
+
+6.) public <T> void method(List<T> l )
+	This method inputs the i input parameter. Hence the compiler doesn't know its type
+	so it will produce an error if i is processed later on in the method. The wildcard is 
+	is the type of list with generics. The list can be of any type T. 	
+
+7.) List<? extends Shape> aShapeList
+	List<? extends Shape> is an example of upper bounded wildcard. The ? stands for an unknown type, 
+	just like the wildcards we saw earlier. However, in this case, we know that this unknown type 
+	is in fact a subtype of Shape. Arguments: List<Shape>, List<subtype of Shape>.(Note: It could be Shape itself, or some subclass; it need not l
+	iterally extend Shape.). Cannot add to this list.We say that Shape is the upper bound of the wildcard.
+	
+8.) MyClass<Integer> myObject;
+	In this, the compiler enforces the type Integer for any formal type parameter of the generic 
+	class MyClass.
+
+9.) public class MyClass<K, V>
+	This is generic type declaration of MyClass with two types (K, V). This example tries to apply 
+	the type parameter K as one of the constraints on type parameter V.
+	Most commonly, K: key, V: value i.e., could be used to implement ordered pair, map etc with key, value pairs
+	
+10.) public <K, V> boolean method(MyClass<K, V> p1, MyClass<K, V> p2)
+	 It is a generic method. It takes two parameters in the method and hence the classes passed
+	 in the method also takes two parameters K and V in them.
+	 Most commonly, K: key, V: value.
+	 This method takes two objects of MyClass with same type K for keys and V for values. It could 
+	 be used to insert key value pairs from p2 to p1. 
+
+11.) public <U extends MyClass> void inspect(U u)
+	 This is a generic method in which the Type U of generics extends MyClass passes its object in the 
+	 method. It is the type 3rd of generics.
+	 UpperBound: MyClass

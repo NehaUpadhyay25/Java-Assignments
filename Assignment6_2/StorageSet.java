@@ -1,4 +1,4 @@
-package Assignment6_2;/*
+/*
  * StorageSet.java
  * 
  * @version: 1.0

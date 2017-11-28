@@ -1,4 +1,4 @@
-package Assignment6_2;/*
+/*
  * Node.java
  * 
  * @version: 1.0

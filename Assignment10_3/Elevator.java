@@ -1,4 +1,4 @@
-package Assignment10_3;
+package assignment10_3;
 
 import java.util.ArrayList;
 import java.util.Random;

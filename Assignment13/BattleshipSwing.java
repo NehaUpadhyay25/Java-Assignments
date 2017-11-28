@@ -1,17 +1,7 @@
-package Assignment13;/*
- * BattleshipSwing.java
- * 
- * @version: 1.0
- * 
- * author : Kritka Sahni
- * author : Neha Upadhyay 
- * 
- * Revisions:
- *     Initial revision
- */
-
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Button;
+import java.awt.Component;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -19,13 +9,14 @@ import java.awt.event.WindowEvent;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-
-/**
- * This class starts and maintains the client in the Battleship game.
- * 
- * @author Kritka Sahni
- * @author Neha Upadhyay
- */
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.UIManager;
 
 public class BattleshipSwing {
 
@@ -48,10 +39,6 @@ public class BattleshipSwing {
     int[][] marker = new int[10][10];
     boolean disconnect = false;
     
-    /**
-     * This method connects the client with server
-     */
-    
     public void connect() {
         Registry reg;
         try {
@@ -70,10 +57,6 @@ public class BattleshipSwing {
         }
     }
 
-    /**
-     * This method creates the player grid
-     * @return pane created pane 
-     */
     public JPanel createPlayerGrid() {
         JPanel pane = new JPanel();
 
@@ -143,12 +126,6 @@ public class BattleshipSwing {
         }
         return pane;
     }
-    
-    /**
-     * This method is used to implement attack
-     * @param x coordinates x
-     * @param y coordinates y
-     */
 
     public void attack( int x, int y ) {
         int track = player.getTrackingGrid(x, y);
@@ -194,7 +171,7 @@ public class BattleshipSwing {
 
             case BattleshipGame.MISS:
                 player.setTrackingGrid(x, y, BattleshipGame.MISS
-                                             + 1);
+                        + 1);
                 resultsLabel.setText(oppoName + " says..."+"It\'s a miss!");
                 // result is miss, so hide the tracking grid so that this player can't play next
                 for(int i=0;i<10;i++){
@@ -207,13 +184,13 @@ public class BattleshipSwing {
                 break;
             case BattleshipGame.HIT:
                 player.setTrackingGrid(x, y, BattleshipGame.HIT
-                                             + 1);
+                        + 1);
 
                 resultsLabel.setText(oppoName + " says..."+"My ship has been hit!");
                 break;
             case BattleshipGame.SUNK:
                 player.setTrackingGrid(x, y, BattleshipGame.SUNK
-                                             + 1);
+                        + 1);
                 // this.clientOutputStream.println("Attacker has
                 // sunk your ship.");
                 resultsLabel.setText(oppoName + " says..."+"My ship has been sunk!");
@@ -243,10 +220,6 @@ public class BattleshipSwing {
         }
     }
 
-    /**
-     * This method creates the grid
-     * @return pane pane of the grid
-     */
     public JPanel createTrackingGrid() {
         JPanel pane = new JPanel();
 
@@ -284,10 +257,7 @@ public class BattleshipSwing {
 
         return pane;
     }
-    /**
-     * This method is used to create the buttons
-     * @return gridPane the create grid
-     */
+
     public Component createButtons() {
         gridPane = new JPanel();
         gridPane.setBorder(BorderFactory.createLoweredBevelBorder());
@@ -297,10 +267,7 @@ public class BattleshipSwing {
         gridPane.add(createPlayerGrid());
         return gridPane;
     }
-    /**
-     * This method creates more buttons
-     * @return pane the created pane
-     */
+
     public Component createExtraButtons() {
         JPanel pane = new JPanel();
 
@@ -389,9 +356,6 @@ public class BattleshipSwing {
         return pane;
     }
 
-    /**
-     * This method displays the grid
-     */
     public void showTrackingGrid() {
         resultsLabel.setText("Your turn to attack!");
         for(int i=0;i<10;i++){
@@ -404,10 +368,6 @@ public class BattleshipSwing {
         
     }
     
-    /**
-     * This method create more buttons
-     * @return pane This method returns the pane
-     */
     public Component createMoreButtons() {
         JPanel pane = new JPanel();
 
@@ -433,10 +393,6 @@ public class BattleshipSwing {
         return pane;
     }
 
-    /**
-     * This method creates the buttons for the ship
-     * @return pane created pane
-     */
     public Component createShipButtons() {
         JPanel pane = new JPanel();
 
@@ -452,7 +408,6 @@ public class BattleshipSwing {
                 currShipCount = 1;
                 currShipLen = 2;
                 arranging = true;
-                dest.setEnabled(false);
             }
         });
         Button cru = new Button("3-Cruiser");
@@ -464,7 +419,6 @@ public class BattleshipSwing {
                 currShipCount = 1;
                 currShipLen = 3;
                 arranging = true;
-                cru.setEnabled(false);
             }
         });
         Button b = new Button("4-Battleship");
@@ -476,7 +430,6 @@ public class BattleshipSwing {
                 currShipCount = 1;
                 currShipLen = 4;
                 arranging = true;
-                b.setEnabled(false);
             }
         });
         JButton button = new JButton("5-Carrier");
@@ -488,15 +441,11 @@ public class BattleshipSwing {
                 currShipCount = 1;
                 currShipLen = 5;
                 arranging = true;
-                button.setEnabled(false);
             }
         });
         return pane;
     }
-    /**
-     * This method creates the components
-     * @return pane returns the created pane
-     */
+
     public Component createComponents() {
         JPanel pane1 = new JPanel();
         pane1.setBorder(BorderFactory.createLoweredBevelBorder());
@@ -510,10 +459,6 @@ public class BattleshipSwing {
         return pane1;
     }
 
-    /**
-     * This is the method
-     * @param args command line arguments(ignored) 
-     */
     public static void main(String[] args) {
         String lookAndFeel;
 

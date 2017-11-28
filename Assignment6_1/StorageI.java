@@ -1,4 +1,4 @@
-package Assignment6_1;/*
+/*
  * StorageI.java
  * 
  * @version: 1.0

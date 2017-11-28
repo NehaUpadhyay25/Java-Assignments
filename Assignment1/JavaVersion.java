@@ -1,4 +1,6 @@
-package Assignment1;/*
+package assignment1;
+
+/*
  * FileName : JavaVersion.java
  * 
  * Version : 1.0
@@ -8,6 +10,8 @@ package Assignment1;/*
  * Revisions: Initial Revision
  * 
  */
+
+import java.util.Properties;
 
 /**
  * Description : The below class prints the version of java used in the machine
