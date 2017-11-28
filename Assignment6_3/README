@@ -1,0 +1,16 @@
+Problem Statement -->
+
+Objective: Understanding wild cards
+Convert the following generics/wild cards into English. 
+Which arguments can be passed, how can it be used, what are the lower/upper bound, etc.
+          public <T> int method(T[] anArray, T elem)
+          public void method(List<? extends Foo> list)
+          static void method(List<?> list)
+          public void method(List<? super Integer> list)
+          public void method(List<?> i)
+          public <T> void method(List<T> l)
+          List<? extends Shape> aShapeList
+          MyClass<Integer> myObject;
+          public class MyClass<K, V>
+          public <K, V> boolean method(MyClass<K, V> p1, MyClass<K, V> p2)
+          public <U extends MyClass> void inspect(U u){
