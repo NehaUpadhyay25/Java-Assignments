@@ -1,0 +1,7 @@
+Problem Statement -->
+
+Objective: Understanding wild cards
+This program from 7.2 is not using wildcards or generics.
+Add the appropriate use of wildcards and generics to the program.
+Add the appropriate use of exception handling to the program.
+Add the appropriate use of assertions to the program.
