@@ -1,0 +1,16 @@
+Problem Statement -->
+
+Objective: Understanding simple classes, interfaces, generics
+Implement an interface which can be used to interface a storage class, like a tree, a linked list. You interface has to use generics. In other words an implementation of this interface must compile without compiler warnings.
+Your interface must at least support the following functionality
+1.) Insertion of a specific object: insert
+2.) Deletion of a specific object: remove
+3.) Finding out if a specific object is already present: contain
+4.) Answering the question how many objects are in the storage: size
+5.) Returning each object stored in the storage area. This can be done with the following idea: hasNext, next
+     storage.startFromBeginning();
+     while ( storage.hasNext() {
+       ... = storage.next();
+       ...
+    }
+6.) Insert all object from one storage implementation to an other storage implementation: addAll
