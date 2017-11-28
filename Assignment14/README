@@ -1,0 +1,12 @@
+Problem Statement -->
+
+Objective: Implementing a larger System
+Implement your own TreeSet class. 
+You can not use anything besides basic types, arrays, and your own classes. 
+You have to implement the following methods:
+          boolean add(Object e)
+          void clear()
+          boolean contains(Object o)
+          boolean isEmpty()
+          Iterator  iterator()
+          int size()
