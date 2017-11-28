@@ -1,0 +1,8 @@
+Problem Statement -->
+
+Objective: Network Programming, UDP
+Objective: Network Programming, Sockets
+Modify the solution of 11.1 so such it can be played across a network. 
+You need to develop a protocol for client/server communication. 
+Describe the protocol in your submission. 
+The network communication must be done via UDP.
