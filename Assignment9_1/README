@@ -1,0 +1,19 @@
+Problem Statement -->
+
+Assume you have an array of length n. 
+The array stores 3 dimensional points, the points int the array are not ordered. 
+The number of points is defined via command line argument.
+
+Design a single threaded algorithm which finds the closest pairs measured by euclidian distance. 
+The pair of points can not be identical. 
+Let’s assume the closest distance is d and more than one pair have the distance d to each other, 
+then you have to print one pair.
+
+Additionally design a multi threaded algorithm which finds the closest pairs measured by euclidian distance.
+Let’s assume the closest distance is d and more than one pair have the distance d to each other, 
+then you have to print one pair. The pair of points can not be identical. 
+The maximum number active threads should be equal to the number of cores if possible.
+
+Your program have to print out the time it takes to solve the problem for a single thread
+solution and a multiple thread solution.
+Your program must wok with all possible array lengths.
