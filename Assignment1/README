@@ -1,0 +1,32 @@
+JavaVersion.java prints out the version of the used java version. This is an output example if I execute the program:
+--> Java Version: 1.8.0_91
+
+
+Pikachu.java - Contains Iterative approach
+Objective: Designing, implementing, and testing of a simple algorithm.
+Suppose you have the following coin in your possession: 1, 2, 5, 10, 10, 25, 25, 25, 50. 
+You would like to buy a Pikachu figure. A Pikachu figure costs 53 and in order to buy it, you need the exact amount. 
+Can you buy it with the coins you have?
+Program should only print out:yes, or no.
+Question: Will your program also print out the correct answer if the price is 0?
+A possible execution is:
+java Pikachu.java
+yes
+
+
+CoinSubsets.java - Contains Recursive approach
+Same as Pikachu problem
+
+
+Designing, implementing, and testing of a simple algorithm.
+Given is the following equation:
+|f(x) - correctf(x)| < DELTA and DELTA > 0
+Program uses the above equation to calculate f(0.1).
+
+
+Objective: Designing, implementing, and testing of a iterative algorithm based on a recursive definition.
+Given is the following recursive definition:
+f(0) := 0; for n = 0; 
+f(1) := 1; for n = 1; 
+f(n) := 3 * f(n-1) + 7 * f(n-2); for n ≥ 2
+Program which calculates f(n) for 2 ≤ n ≤ 100.
