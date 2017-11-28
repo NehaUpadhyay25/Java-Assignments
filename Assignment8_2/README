@@ -1,0 +1,9 @@
+Problem Statement -->
+
+Objective: Java I/O framework.
+Assuming the input file contains only the following characters: a c g t. Write a class similar to GZIPInputStream and GZIPOutputStream in order to compress files of this kind.
+A snippet of your code from 8.1 might look like:
+          outputStream = new DataOutputStream( new GZIPOutputStream( new FileOutputStream(file)));
+The snippet for this how should look similar to:
+          outputStream = new DataOutputStream( new AcgtOutputStream( new FileOutputStream(file)));
+You have to implement the methods read() and write() for AcgtOutputStream. Newline can be ignored.
