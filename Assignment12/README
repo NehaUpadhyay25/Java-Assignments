@@ -1,0 +1,5 @@
+Problem Statement -->
+
+Objective: Network communication, MVC
+Objective: Network Programming, RMI
+Modify the solution of 11.2 so such the network communication is be done via RMI.
