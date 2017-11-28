@@ -1,0 +1,24 @@
+Problem Statement -->
+Implement a two players battle ship game.
+See here for details: https://en.wikipedia.org/wiki/Battleship_(game)
+Your solution must read all input from the keyboard.
+Requirements:
+1.) You have to define at least following classes: TheGame, Player, Fleet, Ship, and Ocean
+2.) Your program must reject all illegal inputs. For example, you can not put a boat on top of an other, etc.
+3.) You have to use one ship of all four classes of ships. You do not have to use a submarine.
+4.) Ships can not touch or overlap each other.
+5.) Your program has to indicate hit, or miss.
+6.) You have to declare a variable as final if possible.
+7.) You have to declare a variable/method as private or protected if possible.
+8.) You have to test every class carefuly.
+
+The main method of my TheGame class looks like:
+public static void main( String[] args ) {
+        Ocean aOcean   = new Ocean(minRow, minColumn, maxRow, maxColumn);
+        Ocean bOcean   = new Ocean(minRow, minColumn, maxRow, maxColumn);
+        Player playerA = new Player (aOcean,  "player a", ’A’, ’a’ );
+        Player playerB = new Player (bOcean,  "player b", ’B’, ’b’ );
+        playerA.createTheFleet();
+        playerB.createTheFleet();
+        playerA.playGameWith(playerB);
+}
