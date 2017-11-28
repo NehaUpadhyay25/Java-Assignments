@@ -1,0 +1,15 @@
+Problem Statement -->
+
+Objective: Threads, Synchronization
+Write a design which that simulates an elevator.
+Requirements:
+1.) The elevator has to serve n floors.
+2.) The elevator can be called to every floor.
+3.) The elevator has to serve every floor in a fair way. The use the ’Sabbath Service’ algorithm would be fine.
+4.) The elevator car can only hold 300kg.
+5.) People queueing up in front of the elevator weigh between 40kg and 100kg. The weight is randomly assigned.
+6.) The queue on a particular floor is between 0 and k, k > 0. There is no correlation between people going to a floor, and people leaving a floor.
+7.) The elevator, and people have to be simulated as individual threads.
+
+Develop a design. 
+Your design has to address the synchronization aspects of the requirements.
