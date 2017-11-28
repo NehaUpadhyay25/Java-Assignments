@@ -1,0 +1,10 @@
+Problem Statement -->
+
+Objective: Understanding simple classes, interfaces, generics
+Implement three classes based on the interface from 6.1. You can not modify the interface.
+All implementations should compile without compiler warnings.
+Requirements:
+1.) The first implementation must store the objects in order. In other words, next must return the objects in order.
+2.) Speed for finding out if an object is in the storage is the most important requirement for the second implementation.
+3.) The third implementation must behave like a set.
+Every class must contain a test main program.
