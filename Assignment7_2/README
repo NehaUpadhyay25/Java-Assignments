@@ -1,0 +1,7 @@
+Problem Statement -->
+
+Objective: Understanding of a program principle.
+Sort in 7.1 can only sort based on left.compareTo( right ). 
+Modify the solution of 7.1 in such a way that the elements can be sorted in any way. 
+The hint is: Constructs a new, empty StorageOrder, sorted according to the specified comparator. 
+Your sort has to be stable and faster than bubble sort.
