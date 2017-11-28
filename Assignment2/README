@@ -1,0 +1,25 @@
+Pikachu.java
+Objective: Modification of Pikachu.java iterative algorithm.
+Modified solution finds the smallest number of coins used and prints out the smallest set, if such a set exist.
+Example:
+% java Pikachu
+57 == 50 5 2
+
+
+Pi.java
+Objective: Designing, implementing, and testing of a simple algorithm.
+Write a program which calculates pi to a precision delta, delta > 0. Your program can only use basic types. Your program can not use any class, besides the one you write to solve this problem.
+Example:
+% java Pi
+pi(1.0E-6)  = 3.141592153589724
+
+S_2.java
+Understanding Strings
+
+
+StringE.java
+Playing with Strings. Program contains functions like-
+1.) Printing the length of a text. 
+2.) Checking if the word starts with a given substring.
+3.) Counting of the occurence of a word in the text.
+4.) Convert all upper case characters to lower case and vice versa.
