@@ -1,0 +1,13 @@
+Problem Statement -->
+
+Objective: Swing
+Modify the solution of 12.1 so such the game can be played via mouse. In other words add a graphical user interface to 12.1. The graphical interface must allow at least the following:
+1.) Setting up the fleet
+2.) Join with the server
+3.) Detach from the server
+4.) Allow to enter the players name
+5.) Update the ocean after each players move on both clients
+6.) Indicate when a client can make a move
+7.) Indicate if a player won or lost.
+8.) It must be resizable (a minimum size must exist)
+9.) You might add more functionality
